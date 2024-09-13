@@ -155,11 +155,11 @@ window.addEventListener('scroll', function() {
 
 // Background Image Slideshow for Hero Section
 const heroBgImages = [
-    'project/assets/hero-bg.jpg',
-    'project/assets/service2.jpg',
-    'project/assets/hard.jpg',
-    'project/assets/service3.jpeg',
-    'project/assets/bfimage.jpg'
+    'hero-bg.jpg',
+    'service2.jpg',
+    'hard.jpg',
+    'service3.jpeg',
+    'bfimage.jpg'
 ];
 let heroBgIndex = 0;
 
