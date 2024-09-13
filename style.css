@@ -16,7 +16,6 @@ section {
 }
 
 /* Hero Section */
-/* Hero Section Styles */
 .hero {
     position: relative;
     height: 100vh;
@@ -36,7 +35,6 @@ section {
     z-index: 1;
 }
 
-/* Hover Effect on Hero Section */
 .hero-content h1 {
     font-size: 3em;
     transition: color 0.3s ease; /* Smooth transition for color change */
@@ -270,4 +268,122 @@ footer {
     font-size: 2em;
     color: white;
     cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* General Styles */
+    body {
+        padding: 0 10px;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    section {
+        padding: 50px 10px;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 20px; /* Add padding for smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2em; /* Smaller font size on mobile */
+    }
+
+    .hero-content p {
+        font-size: 1em; /* Smaller font size on mobile */
+    }
+
+    .btn {
+        font-size: 1em; /* Smaller button text on mobile */
+        padding: 8px 16px;
+    }
+
+    /* Services Section */
+    .services-container {
+        flex-direction: column; /* Stack service cards vertically */
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%; /* Full width for mobile */
+        margin-bottom: 20px;
+    }
+
+    .service-card img {
+        height: 150px; /* Adjust image height for mobile */
+    }
+
+    /* Portfolio Section */
+    .portfolio-gallery {
+        flex-direction: column; /* Stack portfolio images vertically */
+        align-items: center;
+    }
+
+    .portfolio-gallery img {
+        width: 100%; /* Full width for mobile */
+        height: auto; /* Adjust height proportionally */
+    }
+
+    /* Testimonials Section */
+    .testimonials-carousel {
+        flex-direction: column; /* Stack testimonials vertically */
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 90%; /* Full width for mobile */
+    }
+
+    /* Contact Section */
+    .contact-section form {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 16px; /* Larger text for better readability */
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px 0;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+        bottom: 10px;
+        right: 10px;
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    /* Slideshow Styles */
+    .slideshow-btn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .next-btn, .prev-btn {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+
+    /* Modal Styles */
+    .modal-content img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+
+    .close {
+        font-size: 1.5em;
+        top: 5px;
+        right: 5px;
+    }
 }
